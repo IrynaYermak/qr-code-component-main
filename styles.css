@@ -1,0 +1,148 @@
+/* reset styles */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+/* base styles */
+
+:root {
+  --primary-bg-color: hsl(212, 45%, 89%);
+  --primary-color: hsl(218, 44%, 22%);
+  --p-color: hsl(216, 15%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  margin-top: 32px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  max-width: 375px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  margin: 0 auto;
+  margin-top: 68px;
+  padding: 80px 26px;
+  height: auto;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: -1px 1px 7px 2px rgba(215, 212, 212, 0.69);
+}
+
+.wrapper {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: -1px 1px 7px 2px rgba(215, 212, 212, 0.69);
+}
+
+.content {
+  width: 295px;
+}
+
+.code-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 120%;
+}
+.text {
+  padding: 0 8px 16px;
+  color: var(--p-color);
+  line-height: 120%;
+}
+.attribution {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  translate: -50%;
+}
+
+.attribution a {
+  color: var(--p-color);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin-top: 0;
+    background-color: var(--primary-bg-color);
+  }
+
+  .container {
+    min-width: 475px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 240px;
+  }
+
+  .wrapper {
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .content {
+    min-width: 435px;
+  }
+
+  .code-img {
+    border-radius: 14px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    padding: 0 44px 48px;
+    font-size: 20px;
+    color: var(--p-color);
+    line-height: 120%;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    translate: -50%;
+    font-style: 20px;
+  }
+}
