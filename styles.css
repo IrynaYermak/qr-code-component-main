@@ -100,9 +100,10 @@ body {
 
 @media screen and (min-width: 1440px) {
   .wrapper {
-    max-width: 30%;
+    max-width: 15%;
+    height: auto;
     border-radius: 14px;
-    padding: 20px;
+    /* padding: 20px; */
     margin-block-start: 240px;
   }
   .content {
@@ -111,18 +112,18 @@ body {
 
   .code-img {
     border-radius: 14px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .title {
-    font-size: 1.86em;
+    font-size: 1em;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .text {
-    padding: 0 20px 48px;
-    font-size: 1.33em;
+    /* padding: 0 20px 48px; */
+    font-size: 1em;
     color: var(--p-color);
     line-height: 120%;
   }
