@@ -46,6 +46,9 @@ body {
   color: var(--primary-color);
   text-align: center;
   padding: 0 16px 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -53,7 +56,6 @@ body {
   height: auto;
   background-color: var(--white);
   border-radius: 10px;
-  margin: 0 auto;
   margin-top: 68px;
   padding: 16px;
   box-shadow: -1px 1px 7px 2px rgba(215, 212, 212, 0.69);
